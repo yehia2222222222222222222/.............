@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Motors | Luxury & Performance Car Dealership</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              electric: '#00F0FF',
+              accent: '#3B82F6',
+              accentDark: '#1D4ED8',
+            },
+            surface: {
+              950: '#07090E',
+              900: '#0D111A',
+              850: '#141A26',
+              800: '#1C2436',
+              700: '#28334D',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #07090E;
+      color: #F3F4F6;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07090E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1C2436;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3B82F6;
+    }
+    .neon-glow {
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.2);
+    }
+    .neon-border {
+      border-color: rgba(0, 240, 255, 0.4);
+    }
+  </style>
+</head>
+
+<body class="selection:bg-brand-electric selection:text-black">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-surface-950/80 backdrop-blur-lg border-b border-surface-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-electric via-blue-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition">
+          <svg class="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <div>
+          <span class="text-2xl font-extrabold tracking-wider font-display uppercase bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-slate-400">APEX</span>
+          <span class="text-xs ml-1 text-brand-electric font-semibold tracking-widest uppercase">MOTORS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#inventory" class="hover:text-brand-electric transition">Inventory</a>
+        <a href="#calculator" class="hover:text-brand-electric transition">Financing</a>
+        <a href="#experience" class="hover:text-brand-electric transition">Why Apex</a>
+        <a href="#contact" class="hover:text-brand-electric transition">Showroom</a>
+      </nav>
+
+      <!-- CTA & Currency -->
+      <div class="flex items-center space-x-4">
+        <div class="hidden sm:flex items-center space-x-2 text-xs font-semibold px-3 py-1.5 rounded-lg bg-surface-900 border border-surface-800 text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>EGP LIVE RATES</span>
+        </div>
+        <a href="#inventory" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-electric to-brand-accent text-slate-950 font-bold text-xs uppercase tracking-wider hover:opacity-95 hover:shadow-lg hover:shadow-cyan-400/20 transition transform active:scale-95">
+          Explore Cars
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden border-b border-surface-800">
+    <!-- Atmospheric Background Image with Gradient Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2000&q=85" alt="Supercar Showroom" class="w-full h-full object-cover object-center brightness-40 scale-105 animate-pulse duration-[10000ms]">
+      <div class="absolute inset-0 bg-gradient-to-t from-surface-950 via-surface-950/70 to-surface-950/30"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
+      
+      <!-- Top Pill -->
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-surface-900/90 border border-brand-electric/30 text-brand-electric text-xs font-semibold uppercase tracking-widest mb-6">
+        <span>★</span>
+        <span>Premium Showroom Experience · Alexandria & Cairo</span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display uppercase tracking-tight text-white max-w-4xl leading-tight">
+        Precision Engineering. <br class="hidden sm:block">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-electric via-blue-400 to-indigo-400">Pure Adrenaline.</span>
+      </h1>
+
+      <p class="mt-6 text-base sm:text-xl text-slate-300 max-w-2xl leading-relaxed">
+        Discover Egypt's finest selection of hypercars, luxury sedans, and high-performance electric vehicles. Complete with transparent pricing in Egyptian Pounds and tailored financing.
+      </p>
+
+      <!-- Quick Search Bar Widget -->
+      <div class="w-full max-w-4xl mt-10 bg-surface-900/90 backdrop-blur-md p-4 sm:p-5 rounded-3xl border border-surface-700/70 shadow-2xl">
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+          
+          <!-- Brand Selector -->
+          <div>
+            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider text-left mb-1.5">Brand</label>
+            <select id="hero-brand-select" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-3 py-2.5 text-xs font-semibold text-white outline-none focus:border-brand-electric transition">
+              <option value="all">All Brands</option>
+              <option value="Porsche">Porsche</option>
+              <option value="BMW">BMW</option>
+              <option value="Mercedes-Benz">Mercedes-Benz</option>
+              <option value="Audi">Audi</option>
+              <option value="Tesla">Tesla</option>
+              <option value="Hyundai">Hyundai</option>
+            </select>
+          </div>
+
+          <!-- Body Style -->
+          <div>
+            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider text-left mb-1.5">Body Style</label>
+            <select id="hero-body-select" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-3 py-2.5 text-xs font-semibold text-white outline-none focus:border-brand-electric transition">
+              <option value="all">All Styles</option>
+              <option value="Coupe">Coupe / Sport</option>
+              <option value="Sedan">Sedan</option>
+              <option value="SUV">SUV</option>
+            </select>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div>
+            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider text-left mb-1.5">Budget Ceiling</label>
+            <select id="hero-budget-select" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-3 py-2.5 text-xs font-semibold text-white outline-none focus:border-brand-electric transition">
+              <option value="all">Any Price</option>
+              <option value="3500000">Under 3.5M EGP</option>
+              <option value="6000000">Under 6.0M EGP</option>
+              <option value="10000000">Under 10.0M EGP</option>
+              <option value="20000000">Exotic (Up to 20M+)</option>
+            </select>
+          </div>
+
+          <!-- Search Button -->
+          <div class="flex items-end">
+            <button onclick="applyHeroQuickFilter()" class="w-full py-2.5 bg-brand-electric hover:bg-cyan-300 active:scale-95 text-slate-950 font-extrabold text-xs uppercase tracking-wider rounded-xl transition flex items-center justify-center space-x-2">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <span>Search Cars</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= INVENTORY & SHOWROOM SECTION ================= -->
+  <section id="inventory" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-surface-800 pb-6">
+      <div>
+        <span class="text-xs font-bold text-brand-electric uppercase tracking-widest">Current Collection</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display uppercase tracking-tight text-white mt-1">Available Inventory</h2>
+      </div>
+      <div class="flex items-center space-x-3">
+        <span class="text-xs text-slate-400">Sort by:</span>
+        <select id="sort-select" onchange="renderCars()" class="bg-surface-900 border border-surface-700 text-xs text-white rounded-xl px-3 py-2 outline-none focus:border-brand-electric cursor-pointer">
+          <option value="featured">Featured First</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="speed">Fastest (0-100 km/h)</option>
+          <option value="hp">Most Horsepower</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Filter Control Bars -->
+    <div class="bg-surface-900 border border-surface-800 rounded-2xl p-4 sm:p-5 space-y-4">
+      
+      <!-- Top Filters: Search & Quick Pills -->
+      <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+        
+        <!-- Text Search -->
+        <div class="relative w-full md:w-80">
+          <svg class="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" id="inventory-search" oninput="renderCars()" placeholder="Search model, badge or engine..." class="w-full bg-surface-850 border border-surface-700 text-xs text-white rounded-xl pl-10 pr-4 py-2.5 outline-none focus:border-brand-electric transition">
+        </div>
+
+        <!-- Fuel Type Pills -->
+        <div class="flex flex-wrap gap-2 w-full md:w-auto">
+          <button onclick="setFuelFilter('all')" class="fuel-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-brand-electric text-black" data-fuel="all">All Fuels</button>
+          <button onclick="setFuelFilter('Petrol')" class="fuel-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 bg-surface-850 hover:bg-surface-800 transition" data-fuel="Petrol">Petrol</button>
+          <button onclick="setFuelFilter('Electric')" class="fuel-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 bg-surface-850 hover:bg-surface-800 transition" data-fuel="Electric">100% Electric</button>
+          <button onclick="setFuelFilter('Hybrid')" class="fuel-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 bg-surface-850 hover:bg-surface-800 transition" data-fuel="Hybrid">Hybrid</button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Filters: Slider & Reset -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-3 border-t border-surface-800 items-center">
+        <!-- Brand Filter Dropdown -->
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Make / Manufacturer</label>
+          <select id="brand-filter" onchange="renderCars()" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-brand-electric cursor-pointer">
+            <option value="all">All Brands</option>
+            <option value="Porsche">Porsche</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Audi">Audi</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Hyundai">Hyundai</option>
+          </select>
+        </div>
+
+        <!-- Max Price Slider -->
+        <div>
+          <div class="flex justify-between items-center text-[11px] font-semibold text-slate-400 mb-1">
+            <span>Price Ceiling:</span>
+            <span id="price-slider-val" class="text-brand-electric font-mono font-bold">25,000,000 EGP</span>
+          </div>
+          <input type="range" id="price-slider" min="2000000" max="25000000" step="500000" value="25000000" oninput="updateSliderLabel(this.value); renderCars()" class="w-full accent-cyan-400 cursor-pointer h-1.5 bg-surface-800 rounded-lg">
+        </div>
+
+        <!-- Reset Button -->
+        <div class="flex sm:justify-end">
+          <button onclick="resetAllFilters()" class="text-xs text-slate-400 hover:text-brand-electric font-medium transition underline">
+            Reset All Filters
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Inventory Grid -->
+    <div id="cars-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Populated dynamically via JS -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="hidden text-center py-16 bg-surface-900 border border-surface-800 rounded-3xl p-8">
+      <div class="w-16 h-16 rounded-2xl bg-surface-800 text-slate-500 flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+        </svg>
+      </div>
+      <h3 class="text-lg font-bold text-white">No vehicles found</h3>
+      <p class="text-xs text-slate-400 mt-1">Try expanding your price range or clearing selected filters.</p>
+      <button onclick="resetAllFilters()" class="mt-4 px-4 py-2 bg-brand-electric text-black rounded-xl text-xs font-bold uppercase">Reset Filters</button>
+    </div>
+
+  </section>
+
+  <!-- ================= FINANCING & LOAN CALCULATOR ================= -->
+  <section id="calculator" class="py-20 bg-surface-900 border-y border-surface-800 relative overflow-hidden">
+    <!-- Glow Effect -->
+    <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-96 h-96 bg-brand-electric/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-brand-electric uppercase tracking-widest">Smart Financing</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display uppercase tracking-tight text-white mt-1">Egyptian Pound Loan Estimator</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-2">Calculate your estimated monthly installment with flexible down payments and terms up to 60 months.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface-950 border border-surface-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+        
+        <!-- Controls Column (7 Cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Car Price Input -->
+          <div>
+            <div class="flex justify-between items-center text-xs font-semibold text-slate-300 mb-2">
+              <span>Vehicle Price (EGP)</span>
+              <span id="calc-price-display" class="font-mono text-white text-sm font-bold">5,500,000 EGP</span>
+            </div>
+            <input type="range" id="calc-price-range" min="1500000" max="25000000" step="250000" value="5500000" oninput="calculateLoan()" class="w-full accent-cyan-400 cursor-pointer h-2 bg-surface-800 rounded-lg">
+          </div>
+
+          <!-- Down Payment Input -->
+          <div>
+            <div class="flex justify-between items-center text-xs font-semibold text-slate-300 mb-2">
+              <span>Down Payment (<span id="calc-dp-percent">25</span>%)</span>
+              <span id="calc-dp-amount" class="font-mono text-brand-electric text-sm font-bold">1,375,000 EGP</span>
+            </div>
+            <input type="range" id="calc-dp-range" min="10" max="70" step="5" value="25" oninput="calculateLoan()" class="w-full accent-cyan-400 cursor-pointer h-2 bg-surface-800 rounded-lg">
+          </div>
+
+          <!-- Loan Duration (Months) -->
+          <div>
+            <div class="flex justify-between items-center text-xs font-semibold text-slate-300 mb-2">
+              <span>Repayment Tenure</span>
+              <span id="calc-tenure-display" class="font-mono text-white text-sm font-bold">36 Months</span>
+            </div>
+            <div class="grid grid-cols-4 gap-2">
+              <button onclick="setTenure(12)" class="tenure-btn py-2 text-xs font-bold rounded-xl bg-surface-850 hover:bg-surface-800 border border-surface-700 text-slate-300 transition" data-months="12">12 Mos</button>
+              <button onclick="setTenure(24)" class="tenure-btn py-2 text-xs font-bold rounded-xl bg-surface-850 hover:bg-surface-800 border border-surface-700 text-slate-300 transition" data-months="24">24 Mos</button>
+              <button onclick="setTenure(36)" class="tenure-btn py-2 text-xs font-bold rounded-xl bg-brand-electric border border-brand-electric text-slate-950 transition" data-months="36">36 Mos</button>
+              <button onclick="setTenure(60)" class="tenure-btn py-2 text-xs font-bold rounded-xl bg-surface-850 hover:bg-surface-800 border border-surface-700 text-slate-300 transition" data-months="60">60 Mos</button>
+            </div>
+          </div>
+
+          <!-- Annual Interest Rate -->
+          <div>
+            <div class="flex justify-between items-center text-xs font-semibold text-slate-300 mb-2">
+              <span>Estimated Annual Bank Rate</span>
+              <span id="calc-rate-display" class="font-mono text-white text-sm font-bold">18.5%</span>
+            </div>
+            <input type="range" id="calc-rate-range" min="12" max="28" step="0.5" value="18.5" oninput="calculateLoan()" class="w-full accent-cyan-400 cursor-pointer h-2 bg-surface-800 rounded-lg">
+          </div>
+
+        </div>
+
+        <!-- Result Card (5 Cols) -->
+        <div class="lg:col-span-5 bg-gradient-to-br from-surface-900 to-surface-850 border border-surface-700/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xl">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block mb-1">Estimated Monthly Installment</span>
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-brand-electric" id="calc-monthly-installment">
+              145,200 <span class="text-base text-slate-300">EGP / mo</span>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-1">*Excludes insurance and licensing fees. Terms subject to bank approval.</p>
+
+            <div class="mt-6 space-y-3 pt-6 border-t border-surface-700/70 text-xs text-slate-300">
+              <div class="flex justify-between">
+                <span>Principal Loan Amount:</span>
+                <span class="font-mono font-bold text-white" id="calc-loan-principal">4,125,000 EGP</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Total Interest Payable:</span>
+                <span class="font-mono font-bold text-slate-300" id="calc-total-interest">1,102,200 EGP</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Total Payment:</span>
+                <span class="font-mono font-bold text-white" id="calc-total-payment">6,602,200 EGP</span>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="scrollToContactWithVehicle('Financing Inquiry')" class="mt-8 w-full py-3.5 bg-gradient-to-r from-brand-electric to-brand-accent text-slate-950 font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:opacity-95 transition">
+            Apply for Pre-Approval
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= VALUE PROPOSITION / EXPERIENCE ================= -->
+  <section id="experience" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="bg-surface-900 border border-surface-800 rounded-3xl p-8 hover:border-brand-electric/50 transition duration-300 group">
+        <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-brand-electric flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+          🛡️
+        </div>
+        <h3 class="text-xl font-bold font-display text-white mb-2">Certified Provenance</h3>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          Every vehicle undergoes a stringent 180-point technical diagnosis with verifiable international warranty and clean customs clearance.
+        </p>
+      </div>
+
+      <div class="bg-surface-900 border border-surface-800 rounded-3xl p-8 hover:border-brand-electric/50 transition duration-300 group">
+        <div class="w-12 h-12 rounded-2xl bg-blue-500/10 text-brand-accent flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+          ⚡
+        </div>
+        <h3 class="text-xl font-bold font-display text-white mb-2">Immediate Egyptian Delivery</h3>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          No endless import waitlists. Our featured collection is already on showroom floors in Alexandria and Cairo, ready for same-day registration.
+        </p>
+      </div>
+
+      <div class="bg-surface-900 border border-surface-800 rounded-3xl p-8 hover:border-brand-electric/50 transition duration-300 group">
+        <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition">
+          🔄
+        </div>
+        <h3 class="text-xl font-bold font-display text-white mb-2">Premium Trade-In Program</h3>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          Upgrade with confidence. We offer rapid fair-market valuations on your current luxury vehicle to offset your new acquisition directly.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TEST DRIVE & CONTACT MODAL/SECTION ================= -->
+  <section id="contact" class="py-20 bg-surface-950 border-t border-surface-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-surface-900 border border-surface-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <span class="text-xs font-bold text-brand-electric uppercase tracking-widest">Exclusive Test Drive</span>
+          <h2 class="text-3xl font-extrabold font-display uppercase text-white mt-1">Experience The Performance</h2>
+          <p class="text-xs text-slate-400 mt-2">Schedule a private, VIP test drive on our private circuit or showroom track in Alexandria.</p>
+        </div>
+
+        <form id="test-drive-form" onsubmit="handleTestDriveSubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Full Name *</label>
+              <input type="text" id="td-name" required placeholder="Ahmed Hassan" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 outline-none focus:border-brand-electric transition">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Phone Number (Egypt) *</label>
+              <input type="tel" id="td-phone" required placeholder="010 / 011 / 012 xxxxxxxx" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 outline-none focus:border-brand-electric transition">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Vehicle of Interest</label>
+              <select id="td-vehicle" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-4 py-3 text-xs text-white outline-none focus:border-brand-electric transition cursor-pointer">
+                <!-- Dynamically populated -->
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Preferred Showroom Location</label>
+              <select id="td-location" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-4 py-3 text-xs text-white outline-none focus:border-brand-electric transition cursor-pointer">
+                <option value="Alexandria VIP Center (Corniche Road)">Alexandria VIP Center (Corniche Road)</option>
+                <option value="Cairo New Settlement Showroom (Tagamoa)">Cairo New Settlement Showroom (Tagamoa)</option>
+                <option value="Sheikh Zayed City Boutique">Sheikh Zayed City Boutique</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Preferred Date</label>
+              <input type="date" id="td-date" required class="w-full bg-surface-850 border border-surface-700 rounded-xl px-4 py-3 text-xs text-white outline-none focus:border-brand-electric transition">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1">Valid Driving License</label>
+              <select id="td-license" class="w-full bg-surface-850 border border-surface-700 rounded-xl px-4 py-3 text-xs text-white outline-none focus:border-brand-electric transition">
+                <option value="yes">Yes, I hold a valid license</option>
+                <option value="international">Valid International License</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full mt-4 py-4 bg-gradient-to-r from-brand-electric to-brand-accent text-slate-950 font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-xl hover:opacity-95 transition transform active:scale-[0.99]">
+            Confirm Test Drive Appointment
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CAR DETAILS MODAL ================= -->
+  <div id="car-modal" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="car-modal-title" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-surface-950/85 backdrop-blur-md transition-opacity" onclick="closeCarModal()"></div>
+
+    <div class="fixed inset-0 z-10 flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+      <div class="bg-surface-900 border border-surface-800 rounded-3xl w-full max-w-4xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] my-auto">
+        
+        <!-- Modal Top Bar -->
+        <div class="px-6 py-4 border-b border-surface-800 flex items-center justify-between bg-surface-850">
+          <div>
+            <span id="modal-car-badge" class="text-[10px] font-bold uppercase tracking-widest text-brand-electric px-2.5 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/20">Electric Supercar</span>
+            <h3 class="text-lg sm:text-xl font-bold font-display text-white mt-1" id="modal-car-title">Porsche Taycan Turbo S</h3>
+          </div>
+          <button onclick="closeCarModal()" class="w-9 h-9 rounded-full bg-surface-800 hover:bg-surface-700 text-slate-400 hover:text-white flex items-center justify-center transition">
+            ✕
+          </button>
+        </div>
+
+        <!-- Modal Scrollable Content -->
+        <div class="p-6 overflow-y-auto flex-1 space-y-6">
+          
+          <!-- Image and Color Swatches -->
+          <div class="space-y-3">
+            <div class="h-64 sm:h-80 w-full rounded-2xl overflow-hidden bg-black relative border border-surface-800">
+              <img id="modal-car-image" src="" alt="Car Showcase" class="w-full h-full object-cover transition-all duration-500">
+              <div class="absolute bottom-3 left-3 bg-surface-950/80 backdrop-blur-sm px-3 py-1 rounded-lg text-xs font-mono text-brand-electric font-bold">
+                Colorway: <span id="modal-active-color-name">Chalk White</span>
+              </div>
+            </div>
+
+            <!-- Interactive Color Switcher -->
+            <div class="flex items-center justify-between p-3 rounded-xl bg-surface-850 border border-surface-800">
+              <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">Paint Finish:</span>
+              <div class="flex space-x-2.5" id="modal-color-swatches">
+                <!-- Color dots inserted by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Price & Quick Numbers -->
+          <div class="flex flex-wrap items-baseline justify-between gap-4 p-4 rounded-2xl bg-surface-950 border border-surface-800">
+            <div>
+              <span class="text-xs text-slate-400 block">Total Acquisition Price (EGP)</span>
+              <span class="text-2xl sm:text-3xl font-extrabold font-mono text-brand-electric" id="modal-car-price">8,900,000 EGP</span>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-slate-400 block">Estimated Installment</span>
+              <span class="text-base font-bold text-slate-200" id="modal-car-est-installment">From 182,000 EGP / mo</span>
+            </div>
+          </div>
+
+          <!-- Detailed Specs Grid -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Engineering Specifications</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs" id="modal-specs-grid">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Highlight Description -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Vehicle Overview</h4>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" id="modal-car-desc"></p>
+          </div>
+
+        </div>
+
+        <!-- Modal Actions Footer -->
+        <div class="px-6 py-4 border-t border-surface-800 bg-surface-850 flex items-center justify-between">
+          <button onclick="calculateForCurrentModalCar()" class="text-xs font-bold text-brand-electric hover:underline">
+            Calculate Loan for this Model →
+          </button>
+          <button onclick="bookDriveFromModal()" class="px-6 py-2.5 bg-gradient-to-r from-brand-electric to-brand-accent text-slate-950 font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:opacity-95 transition">
+            Book Test Drive
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= BOOKING SUCCESS TOAST ================= -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-surface-900 border border-brand-electric/50 text-white px-5 py-4 rounded-2xl shadow-2xl flex items-center space-x-3 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="w-3 h-3 rounded-full bg-brand-electric animate-ping"></div>
+    <div>
+      <div class="text-xs font-bold text-brand-electric uppercase tracking-wider" id="toast-title">Appointment Confirmed</div>
+      <div class="text-xs text-slate-300" id="toast-msg">Our concierge will contact you within 2 hours.</div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-surface-950 border-t border-surface-800 text-slate-500 text-xs py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center space-x-3">
+        <span class="text-lg font-bold font-display uppercase tracking-wider text-white">APEX MOTORS</span>
+        <span>•</span>
+        <span>Alexandria & Cairo VIP Lounges</span>
+      </div>
+
+      <div class="flex space-x-6 text-slate-400">
+        <a href="#inventory" class="hover:text-brand-electric transition">Collection</a>
+        <a href="#calculator" class="hover:text-brand-electric transition">Loan Calculator</a>
+        <a href="#contact" class="hover:text-brand-electric transition">Test Drive</a>
+      </div>
+
+      <div>
+        © 2026 Apex Motors Egypt S.A.E. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= LOGIC SCRIPT ================= -->
+  <script>
+    // Car Inventory Dataset in Egyptian Pounds (EGP)
+    const CAR_DATABASE = [
+      {
+        id: 'porsche-taycan',
+        brand: 'Porsche',
+        model: 'Taycan Turbo S',
+        year: 2026,
+        body: 'Coupe',
+        fuel: 'Electric',
+        transmission: '2-Speed Automatic',
+        price: 9400000,
+        hp: 750,
+        zeroToHundred: '2.6s',
+        topSpeed: '260 km/h',
+        range: '450 km',
+        featured: true,
+        desc: 'The pinnacle of electric acceleration combined with authentic Stuttgart sports car DNA. Launch control provides violent, neck-snapping launches in total whisper silence.',
+        colors: [
+          { name: 'Frozen Blue Metallic', hex: '#6397c0', img: 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Carrara White', hex: '#ffffff', img: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Volcano Grey', hex: '#373a3c', img: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80' }
+        ]
+      },
+      {
+        id: 'bmw-m4',
+        brand: 'BMW',
+        model: 'M4 Competition M xDrive',
+        year: 2026,
+        body: 'Coupe',
+        fuel: 'Petrol',
+        transmission: '8-Speed M Steptronic',
+        price: 7600000,
+        hp: 523,
+        zeroToHundred: '3.4s',
+        topSpeed: '290 km/h',
+        range: 'Gasoline',
+        featured: true,
+        desc: 'TwinPower Turbo inline 6-cylinder delivering ferocious rear-biased all-wheel-drive dynamics. Wrapped in aggressive carbon fiber aero and an intoxicating dual-pipe exhaust roar.',
+        colors: [
+          { name: 'Isle of Man Green', hex: '#164e3f', img: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Sao Paulo Yellow', hex: '#eab308', img: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Black Sapphire', hex: '#111827', img: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80' }
+        ]
+      },
+      {
+        id: 'merc-gt',
+        brand: 'Mercedes-Benz',
+        model: 'AMG GT 63 S E-Performance',
+        year: 2026,
+        body: 'Coupe',
+        fuel: 'Hybrid',
+        transmission: '9-Speed AMG SPEEDSHIFT',
+        price: 13200000,
+        hp: 831,
+        zeroToHundred: '2.9s',
+        topSpeed: '316 km/h',
+        range: 'Plug-in Hybrid',
+        featured: true,
+        desc: 'Formula 1 hybrid battery integration paired to a handcrafted 4.0L Biturbo V8. Mind-bending 1,400 Nm of torque with active aerodynamics and carbon ceramic braking.',
+        colors: [
+          { name: 'Magno Selenite Grey', hex: '#4b5563', img: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Obsidian Black', hex: '#0f172a', img: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80' }
+        ]
+      },
+      {
+        id: 'audi-rs6',
+        brand: 'Audi',
+        model: 'RS6 Avant Performance',
+        year: 2026,
+        body: 'Sedan',
+        fuel: 'Petrol',
+        transmission: '8-Speed Tiptronic Quattro',
+        price: 8800000,
+        hp: 621,
+        zeroToHundred: '3.3s',
+        topSpeed: '280 km/h',
+        range: 'Gasoline',
+        featured: false,
+        desc: 'The ultimate stealth weapon. Widebody stance with legendary Quattro all-wheel grip, delivering supercar acceleration with full luxury family versatility.',
+        colors: [
+          { name: 'Nardo Grey', hex: '#9ca3af', img: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Mythos Black', hex: '#1e293b', img: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80' }
+        ]
+      },
+      {
+        id: 'tesla-plaid',
+        brand: 'Tesla',
+        model: 'Model S Plaid Tri-Motor',
+        year: 2026,
+        body: 'Sedan',
+        fuel: 'Electric',
+        transmission: 'Single-Speed Direct Drive',
+        price: 6800000,
+        hp: 1020,
+        zeroToHundred: '2.1s',
+        topSpeed: '322 km/h',
+        range: '600 km',
+        featured: true,
+        desc: 'Tri-motor torque vectoring with carbon-sleeved rotors. Accelerates faster than almost any production combustion vehicle on earth.',
+        colors: [
+          { name: 'Ultra Red', hex: '#b91c1c', img: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Solid Pearl White', hex: '#f8fafc', img: 'https://images.unsplash.com/photo-1536700503339-1e4b06520771?auto=format&fit=crop&w=1200&q=80' }
+        ]
+      },
+      {
+        id: 'hyundai-ioniq5n',
+        brand: 'Hyundai',
+        model: 'IONIQ 5 N Performance',
+        year: 2026,
+        body: 'SUV',
+        fuel: 'Electric',
+        transmission: 'N e-Shift Dual Clutch Feel',
+        price: 4300000,
+        hp: 641,
+        zeroToHundred: '3.4s',
+        topSpeed: '260 km/h',
+        range: '420 km',
+        featured: false,
+        desc: 'Voted World Performance Car of the Year. Features simulated paddle shifting, rev matching, drift optimizer, and N Active Sound design.',
+        colors: [
+          { name: 'Performance Blue Matte', hex: '#38bdf8', img: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80' },
+          { name: 'Abyss Black', hex: '#18181b', img: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80' }
+        ]
+      }
+    ];
+
+    // State Variables
+    let activeFuel = 'all';
+    let selectedCarForModal = null;
+    let currentLoanTenure = 36;
+
+    // Initialize UI
+    function initShowroom() {
+      renderCars();
+      populateTestDriveSelect();
+      calculateLoan();
+      
+      // Set today as minimum booking date
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('td-date');
+      if (dateInput) {
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+    }
+
+    // Filter and Render Cars
+    function renderCars() {
+      const container = document.getElementById('cars-grid');
+      const emptyState = document.getElementById('empty-state');
+      const search = document.getElementById('inventory-search').value.toLowerCase().trim();
+      const brandFilter = document.getElementById('brand-filter').value;
+      const maxPrice = Number(document.getElementById('price-slider').value);
+      const sortBy = document.getElementById('sort-select').value;
+
+      let filtered = CAR_DATABASE.filter(car => {
+        if (activeFuel !== 'all' && car.fuel !== activeFuel) return false;
+        if (brandFilter !== 'all' && car.brand !== brandFilter) return false;
+        if (car.price > maxPrice) return false;
+        if (search) {
+          const matchQuery = `${car.brand} ${car.model} ${car.fuel} ${car.body}`.toLowerCase();
+          if (!matchQuery.includes(search)) return false;
+        }
+        return true;
+      });
+
+      // Sorting
+      filtered.sort((a, b) => {
+        if (sortBy === 'price-asc') return a.price - b.price;
+        if (sortBy === 'price-desc') return b.price - a.price;
+        if (sortBy === 'speed') return parseFloat(a.zeroToHundred) - parseFloat(b.zeroToHundred);
+        if (sortBy === 'hp') return b.hp - a.hp;
+        // Default: featured
+        return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      container.innerHTML = filtered.map(car => {
+        const primaryImg = car.colors[0].img;
+        const estInstallment = Math.round(car.price * 0.021); // Approx rule-of-thumb monthly
+
+        return `
+          <div class="bg-surface-900 border border-surface-800 hover:border-brand-electric/50 rounded-3xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 group shadow-xl">
+            <div>
+              <!-- Car Image Frame -->
+              <div class="h-52 w-full bg-black relative overflow-hidden">
+                <img src="${primaryImg}" alt="${car.brand} ${car.model}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                
+                <!-- Badge Overlay -->
+                <div class="absolute top-3 left-3 flex space-x-2">
+                  <span class="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md bg-surface-950/80 backdrop-blur-sm text-brand-electric border border-brand-electric/30">
+                    ${car.fuel}
+                  </span>
+                  ${car.featured ? `
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                      ★ Featured
+                    </span>
+                  ` : ''}
+                </div>
+
+                <div class="absolute bottom-3 right-3 bg-surface-950/80 backdrop-blur-sm px-2.5 py-1 rounded-md text-[11px] font-mono text-slate-300">
+                  ${car.year}
+                </div>
+              </div>
+
+              <!-- Card Details -->
+              <div class="p-5 space-y-4">
+                <div>
+                  <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">${car.brand}</span>
+                  <h3 class="text-lg font-bold font-display text-white leading-snug group-hover:text-brand-electric transition">${car.model}</h3>
+                </div>
+
+                <!-- Specs Matrix -->
+                <div class="grid grid-cols-3 gap-2 py-3 border-y border-surface-800 text-center">
+                  <div class="bg-surface-850 p-2 rounded-xl">
+                    <span class="text-[10px] text-slate-400 uppercase block font-semibold">Power</span>
+                    <span class="text-xs font-mono font-bold text-white">${car.hp} HP</span>
+                  </div>
+                  <div class="bg-surface-850 p-2 rounded-xl">
+                    <span class="text-[10px] text-slate-400 uppercase block font-semibold">0-100</span>
+                    <span class="text-xs font-mono font-bold text-brand-electric">${car.zeroToHundred}</span>
+                  </div>
+                  <div class="bg-surface-850 p-2 rounded-xl">
+                    <span class="text-[10px] text-slate-400 uppercase block font-semibold">Top Speed</span>
+                    <span class="text-xs font-mono font-bold text-white">${car.topSpeed}</span>
+                  </div>
+                </div>
+
+                <!-- Price and Finance estimate -->
+                <div class="flex items-baseline justify-between">
+                  <div>
+                    <span class="text-[10px] text-slate-400 uppercase font-semibold block">Price (EGP)</span>
+                    <span class="text-xl font-extrabold font-mono text-white">${car.price.toLocaleString()}</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-[10px] text-slate-400 block font-semibold">Est. Installment</span>
+                    <span class="text-xs font-mono font-bold text-slate-300">~${estInstallment.toLocaleString()} /mo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Action -->
+            <div class="p-5 pt-0">
+              <button onclick="openCarModal('${car.id}')" class="w-full py-2.5 rounded-xl bg-surface-800 hover:bg-brand-electric hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider transition duration-200 flex items-center justify-center space-x-1">
+                <span>View Full Specs & Colors</span>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Fuel Filter Toggles
+    function setFuelFilter(type) {
+      activeFuel = type;
+      document.querySelectorAll('.fuel-filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-fuel') === type) {
+          btn.className = 'fuel-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-brand-electric text-black';
+        } else {
+          btn.className = 'fuel-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 bg-surface-850 hover:bg-surface-800 transition';
+        }
+      });
+      renderCars();
+    }
+
+    // Slider Label
+    function updateSliderLabel(val) {
+      document.getElementById('price-slider-val').innerText = `${Number(val).toLocaleString()} EGP`;
+    }
+
+    // Reset Filters
+    function resetAllFilters() {
+      document.getElementById('inventory-search').value = '';
+      document.getElementById('brand-filter').value = 'all';
+      document.getElementById('price-slider').value = 25000000;
+      updateSliderLabel(25000000);
+      setFuelFilter('all');
+      document.getElementById('sort-select').value = 'featured';
+      renderCars();
+    }
+
+    // Hero Quick Filter
+    function applyHeroQuickFilter() {
+      const brand = document.getElementById('hero-brand-select').value;
+      const budget = document.getElementById('hero-budget-select').value;
+
+      if (brand !== 'all') {
+        document.getElementById('brand-filter').value = brand;
+      }
+      if (budget !== 'all') {
+        document.getElementById('price-slider').value = Number(budget);
+        updateSliderLabel(budget);
+      }
+
+      renderCars();
+      const target = document.getElementById('inventory');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Open Car Details Modal
+    function openCarModal(carId) {
+      const car = CAR_DATABASE.find(c => c.id === carId);
+      if (!car) return;
+      selectedCarForModal = car;
+
+      const modal = document.getElementById('car-modal');
+      document.getElementById('modal-car-badge').innerText = `${car.fuel} · ${car.body}`;
+      document.getElementById('modal-car-title').innerText = `${car.brand} ${car.model}`;
+      document.getElementById('modal-car-price').innerText = `${car.price.toLocaleString()} EGP`;
+      
+      const monthly = Math.round(car.price * 0.021);
+      document.getElementById('modal-car-est-installment').innerText = `From ~${monthly.toLocaleString()} EGP / mo`;
+      document.getElementById('modal-car-desc').innerText = car.desc;
+
+      // Primary color setup
+      const initialColor = car.colors[0];
+      document.getElementById('modal-car-image').src = initialColor.img;
+      document.getElementById('modal-active-color-name').innerText = initialColor.name;
+
+      // Color swatches
+      const swatchContainer = document.getElementById('modal-color-swatches');
+      swatchContainer.innerHTML = car.colors.map((c, index) => `
+        <button onclick="switchModalColor(${index})" class="w-6 h-6 rounded-full border-2 ${index === 0 ? 'border-brand-electric scale-110' : 'border-surface-700'} hover:scale-125 transition" style="background-color: ${c.hex};" title="${c.name}"></button>
+      `).join('');
+
+      // Engineering Specs Matrix
+      const specsGrid = document.getElementById('modal-specs-grid');
+      specsGrid.innerHTML = `
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">Horsepower</span>
+          <span class="text-white font-mono font-bold">${car.hp} HP</span>
+        </div>
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">0 - 100 km/h</span>
+          <span class="text-brand-electric font-mono font-bold">${car.zeroToHundred}</span>
+        </div>
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">Top Speed</span>
+          <span class="text-white font-mono font-bold">${car.topSpeed}</span>
+        </div>
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">Transmission</span>
+          <span class="text-white font-mono font-bold">${car.transmission}</span>
+        </div>
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">Energy / Fuel</span>
+          <span class="text-white font-mono font-bold">${car.fuel}</span>
+        </div>
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">Range / Tank</span>
+          <span class="text-white font-mono font-bold">${car.range}</span>
+        </div>
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">Model Year</span>
+          <span class="text-white font-mono font-bold">${car.year}</span>
+        </div>
+        <div class="bg-surface-850 p-2.5 rounded-xl border border-surface-700">
+          <span class="text-slate-400 block">Body Classification</span>
+          <span class="text-white font-mono font-bold">${car.body}</span>
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+    }
+
+    function switchModalColor(index) {
+      if (!selectedCarForModal) return;
+      const col = selectedCarForModal.colors[index];
+      if (!col) return;
+
+      document.getElementById('modal-car-image').src = col.img;
+      document.getElementById('modal-active-color-name').innerText = col.name;
+
+      const buttons = document.querySelectorAll('#modal-color-swatches button');
+      buttons.forEach((btn, i) => {
+        if (i === index) {
+          btn.className = 'w-6 h-6 rounded-full border-2 border-brand-electric scale-125 transition';
+        } else {
+          btn.className = 'w-6 h-6 rounded-full border-2 border-surface-700 hover:scale-125 transition';
+        }
+      });
+    }
+
+    function closeCarModal() {
+      document.getElementById('car-modal').classList.add('hidden');
+      selectedCarForModal = null;
+    }
+
+    function bookDriveFromModal() {
+      if (!selectedCarForModal) return;
+      const modelTitle = `${selectedCarForModal.brand} ${selectedCarForModal.model}`;
+      closeCarModal();
+      scrollToContactWithVehicle(modelTitle);
+    }
+
+    function calculateForCurrentModalCar() {
+      if (!selectedCarForModal) return;
+      const price = selectedCarForModal.price;
+      closeCarModal();
+
+      const slider = document.getElementById('calc-price-range');
+      if (slider) {
+        slider.value = price;
+        calculateLoan();
+      }
+      const calcSec = document.getElementById('calculator');
+      if (calcSec) calcSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Financing Calculator Logic
+    function calculateLoan() {
+      const price = Number(document.getElementById('calc-price-range').value);
+      const dpPercent = Number(document.getElementById('calc-dp-range').value);
+      const annualRate = Number(document.getElementById('calc-rate-range').value) / 100;
+      const months = currentLoanTenure;
+
+      const downPayment = price * (dpPercent / 100);
+      const principal = price - downPayment;
+
+      // Standard monthly amortization formula
+      const monthlyRate = annualRate / 12;
+      let monthlyInstallment = 0;
+      if (monthlyRate > 0) {
+        monthlyInstallment = (principal * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+      } else {
+        monthlyInstallment = principal / months;
+      }
+
+      const totalPayment = (monthlyInstallment * months) + downPayment;
+      const totalInterest = (monthlyInstallment * months) - principal;
+
+      // Update UI displays
+      document.getElementById('calc-price-display').innerText = `${price.toLocaleString()} EGP`;
+      document.getElementById('calc-dp-percent').innerText = dpPercent;
+      document.getElementById('calc-dp-amount').innerText = `${Math.round(downPayment).toLocaleString()} EGP`;
+      document.getElementById('calc-rate-display').innerText = `${(annualRate * 100).toFixed(1)}%`;
+      document.getElementById('calc-monthly-installment').innerHTML = `${Math.round(monthlyInstallment).toLocaleString()} <span class="text-base text-slate-300">EGP / mo</span>`;
+      document.getElementById('calc-loan-principal').innerText = `${Math.round(principal).toLocaleString()} EGP`;
+      document.getElementById('calc-total-interest').innerText = `${Math.round(totalInterest).toLocaleString()} EGP`;
+      document.getElementById('calc-total-payment').innerText = `${Math.round(totalPayment).toLocaleString()} EGP`;
+    }
+
+    function setTenure(months) {
+      currentLoanTenure = months;
+      document.getElementById('calc-tenure-display').innerText = `${months} Months`;
+      document.querySelectorAll('.tenure-btn').forEach(btn => {
+        if (Number(btn.getAttribute('data-months')) === months) {
+          btn.className = 'tenure-btn py-2 text-xs font-bold rounded-xl bg-brand-electric border border-brand-electric text-slate-950 transition';
+        } else {
+          btn.className = 'tenure-btn py-2 text-xs font-bold rounded-xl bg-surface-850 hover:bg-surface-800 border border-surface-700 text-slate-300 transition';
+        }
+      });
+      calculateLoan();
+    }
+
+    // Populate Test Drive Vehicle Dropdown
+    function populateTestDriveSelect() {
+      const select = document.getElementById('td-vehicle');
+      if (!select) return;
+      select.innerHTML = CAR_DATABASE.map(c => `
+        <option value="${c.brand} ${c.model}">${c.brand} ${c.model} (${c.fuel})</option>
+      `).join('');
+    }
+
+    function scrollToContactWithVehicle(vehicleName) {
+      const select = document.getElementById('td-vehicle');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value.includes(vehicleName)) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      const target = document.getElementById('contact');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Test Drive Form Submission
+    function handleTestDriveSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('td-name').value;
+      const phone = document.getElementById('td-phone').value;
+      const vehicle = document.getElementById('td-vehicle').value;
+      const location = document.getElementById('td-location').value;
+      const date = document.getElementById('td-date').value;
+
+      showToast(`VIP Booking Confirmed!`, `${name}, your test drive for the ${vehicle} on ${date} at our ${location} is logged.`);
+      document.getElementById('test-drive-form').reset();
+    }
+
+    // Toast Notification helper
+    let toastTimeout;
+    function showToast(title, message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-title').innerText = title;
+      document.getElementById('toast-msg').innerText = message;
+
+      clearTimeout(toastTimeout);
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 4500);
+    }
+
+    // Run on startup
+    window.addEventListener('DOMContentLoaded', initShowroom);
+  </script>
+</body>
+</html>
